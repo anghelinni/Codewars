@@ -83,6 +83,9 @@
     <ClCompile Include="src\Multiple_3_5.cpp" />
     <ClCompile Include="src\RevRot.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CubesBuilding.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -2,10 +2,11 @@
 #include <iostream>
 
 #include "RevRot.hpp"
+#include "CubesBuilding.hpp"
 
 int multiple3_5( int max );
 std::string expandedForm( int number );
-
+long long findNb( long long m );
 
 int main()
 {
@@ -23,6 +24,12 @@ int main()
 	std::cout << "Multiple sum for 100 is " << multiple3_5( 100 ) << std::endl;
 
 	std::cout << expandedForm( 123456789 ) << std::endl;
+
+	/*std::cout << "Building 100: " << findNb( 100 ) << std::endl;
+	std::cout << "Building 441: " << findNb( 441 ) << std::endl;
+	std::cout << "Building 1071225: " << findNb( 1071225 ) << std::endl;*/
+	std::cout << "Building 4183059834009: " << ASum::findNb( 26825883955641 ) << std::endl;
+	//std::cout << "Building 91716553919377: " << findNb( 91716553919377 ) << std::endl;
 
 	return 0;
 }
