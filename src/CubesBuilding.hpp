@@ -5,14 +5,16 @@ public:
 	static long long findNb( long long m )
 	{
 		long long volume = 0;
-		int numberOfCubes = 1;
+		long long numberOfCubes = 1;
 
 		for ( ; volume < m; numberOfCubes++ )
 		{
-			volume += numberOfCubes * numberOfCubes * numberOfCubes;
-			if ( numberOfCubes == 3218 )
+			volume += ( numberOfCubes * numberOfCubes * numberOfCubes );
+
+			if ( volume < 0 )
 			{
-				volume = volume;
+				// Overflow
+				return -1;
 			}
 		}
 
