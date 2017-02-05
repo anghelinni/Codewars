@@ -3,6 +3,8 @@
 
 #include "RevRot.hpp"
 #include "CubesBuilding.hpp"
+#include "Tortoise.hpp"
+#include "Eleven.hpp"
 #include "PerimetersSum.hpp"
 
 int multiple3_5( int max );
@@ -33,7 +35,20 @@ int main()
 	std::cout << "Building 40539911473216: " << ASum::findNb( 40539911473216 ) << std::endl;
 	std::cout << "Building 91716553919377: " << ASum::findNb( 91716553919377 ) << std::endl;*/
 
-	std::cout << "Perimeters sum for 0 is: " << SumFct::perimeter( 0 ) << std::endl;
+	Time t;
+    t = ComputeTime( 720, 850, 70 );
+    std::cout << t[ 0 ] << ":" << t[ 1 ] << ":" << t[ 2 ] << std::endl;
+
+    t = ComputeTime( 80, 91, 37 );
+    std::cout << t[ 0 ] << ":" << t[ 1 ] << ":" << t[ 2 ] << std::endl;
+
+    std::cout << "11 " << ( eleven( "11" ) ? "is " : "is not " ) << "divisible by 11.\n";
+    std::cout << "12 " << ( eleven( "12" ) ? "is " : "is not " ) << "divisible by 11.\n";
+    std::cout << "970299 " << ( eleven( "970299" ) ? "is " : "is not " ) << "divisible by 11.\n";
+    std::cout << "96059601 " << ( eleven( "96059601" ) ? "is " : "is not " ) << "divisible by 11.\n";
+    std::cout << "96059600 " << ( eleven( "96059600" ) ? "is " : "is not " ) << "divisible by 11.\n";
+
+    std::cout << "Perimeters sum for 0 is: " << SumFct::perimeter( 0 ) << std::endl;
 	std::cout << "Perimeters sum for 1 is: " << SumFct::perimeter( 1 ) << std::endl;
 	std::cout << "Perimeters sum for 2 is: " << SumFct::perimeter( 2 ) << std::endl;
 	std::cout << "Perimeters sum for 6 is: " << SumFct::perimeter( 6 ) << std::endl;

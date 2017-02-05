@@ -13,6 +13,7 @@ std::string expandedForm( int number )
 		result.append( numOfZeros, '0' );
 		result += " + ";
 	}
+
 	result.pop_back();
 	result.pop_back();
 	result.pop_back();
