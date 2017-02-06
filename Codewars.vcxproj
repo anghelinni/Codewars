@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CubesBuilding.hpp" />
+    <ClInclude Include="src\Eleven.hpp" />
     <ClInclude Include="src\PerimetersSum.hpp" />
+    <ClInclude Include="src\Tortoise.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
