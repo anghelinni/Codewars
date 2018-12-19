@@ -7,6 +7,7 @@
 #include "Tortoise.hpp"
 #include "Eleven.hpp"
 #include "PerimetersSum.hpp"
+#include "DpSingleton.hpp"
 
 void testRevRot()
 {
@@ -84,15 +85,34 @@ void testPerimetersSum()
 	std::cout << "--------------------------------------" << std::endl << std::endl;
 }
 
+
+class Dupa
+{
+public:
+    virtual void kkk() = 0;
+};
+
+class DupaInst : public Dupa
+{
+public:
+    void kkk() { std::cout << "inlined kkk()\n"; }
+};
+
 int main()
 {
-	testRevRot();
+	/*testRevRot();
 	testMultiple3_5();
 	testExpandedForm();
 	testAsum();
 	testTortoiseTimes();
 	testEleven();
-	testPerimetersSum();
+	testPerimetersSum();*/
+
+	//testSingleton();
+    DupaInst d;
+    Dupa* dd = &d;
+
+    dd->kkk();
 
 	/*char c;
 	std::cin >> c;*/
