@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\DpSingleton.cpp" />
     <ClCompile Include="src\ExpandedForm.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Multiple_3_5.cpp" />
@@ -86,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CubesBuilding.hpp" />
+    <ClInclude Include="src\DpSingleton.hpp" />
     <ClInclude Include="src\Eleven.hpp" />
     <ClInclude Include="src\Main.hpp" />
     <ClInclude Include="src\PerimetersSum.hpp" />
